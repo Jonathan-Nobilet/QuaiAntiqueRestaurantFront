@@ -1,2 +1,23 @@
 @import url(/node_modules/bootstrap-icons/font/bootstrap-icons.css);
 @import 'custom';
+
+// pose une position relative du html, 
+// et indique que ma page doit faire au minimum 100% de l'écran.
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+main {
+    // margin-bottom: me permet d'éviter que le footer ne passe devant mon contenu puisqu'il est en position absolute
+    margin-bottom: 225px;
+}
+
+// footer.footer = mon footer quand il a la class footer
+// position absolute en bas et une largeur de 100%
+footer.footer {
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
