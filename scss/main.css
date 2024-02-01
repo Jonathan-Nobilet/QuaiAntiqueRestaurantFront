@@ -11987,6 +11987,10 @@ p {
   font-size: 18px;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .hero-scene {
   position: relative;
 }
@@ -12013,7 +12017,7 @@ p {
 }
 
 main {
-  margin-bottom: 225px;
+  margin-bottom: 259px;
 }
 
 footer.footer {
