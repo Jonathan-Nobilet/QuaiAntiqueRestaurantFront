@@ -7,6 +7,39 @@ html {
     position: relative;
     min-height: 100%;
 }
+p {
+    // font-family-serif = hind madurai dans le fichier _custom.scss
+    font-family: $font-family-serif;
+    font-size: 18px;
+}
+
+.hero-scene {
+    // réalisation du backgraund de hero-scene
+    // positionnement derrière le content
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(/images/photo\ accueil.jpg);
+        background-size: cover;
+        filter: brightness(30%);
+    }
+    *{
+        // positionner les éléments devant le before
+        position: relative;
+    }   
+    .hero-scene-content {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
 
 main {
     // margin-bottom: me permet d'éviter que le footer ne passe devant mon contenu puisqu'il est en position absolute
