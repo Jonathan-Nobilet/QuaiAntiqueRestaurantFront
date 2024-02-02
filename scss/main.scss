@@ -21,6 +21,7 @@ p {
     // réalisation du backgraund de hero-scene
     // positionnement derrière le content
     position: relative;
+    margin-bottom: 15px;
     &::before {
         content: "";
         position: absolute;
@@ -82,4 +83,8 @@ footer.footer {
         opacity: 0;
         transition: 0.3s;
     }
+}
+
+.form-label{
+    color: $primary;
 }
